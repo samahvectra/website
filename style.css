@@ -154,7 +154,7 @@ body {
     font-size: 2.2em;
     font-weight: 800;
     margin-bottom: 30px;
-    margin-top: 100px;
+    margin-top: 0;
 }
 
 .content {
@@ -205,16 +205,57 @@ body {
 }
 
 .Services {
-    margin-top: 150px;
+    margin-top: 0;
+    padding: 5rem 0;
+}
+
+
+.skills {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 5rem 0;
+}
+
+.skill-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    place-items: center;
+}
+
+.skills .card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.skills .card:hover {
+    transform: translateY(-5px);
+}
+
+.skills .icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #2e46cc;
+}
+
+.skills .info h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
 }
 
 .projects {
     background-color: #000016;
-}
-
-.skills {
-    background-color: #3160c5;
     margin: 0;
+    padding: 5rem 0;
 }
 
 .project-card {
@@ -272,16 +313,54 @@ body {
     color: #23a3f3;
 }
 
-.skill-content {
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+.menu-btn {
+    display: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
+    .hero header nav {
+        position: relative;
+    }
+
+    .menu-btn {
+        display: block
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: -5%;
+        width: 110%;
+        background-color: #080e1c;
+        padding: 20px;
+        text-align: center;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 110%;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
     .hero {
         height: auto;
         overflow: visible;
@@ -324,5 +403,23 @@ body {
 
     .hero .container .div-text span {
         font-size: 22px;
+    }
+
+    .skill-content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .skills .card {
+        max-width: 250px;
+    }
+
+    .skills .icon {
+        font-size: 2.5rem;
+    }
+
+    .skills .info h2 {
+        font-size: 1.25rem;
     }
 }

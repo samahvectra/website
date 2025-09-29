@@ -15,6 +15,9 @@
       <nav>
 
         <a href="#" class="logo">M<span>Atef</span></a>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
 
         <div class="nav-links">
           <a href="#">Home</a>
@@ -123,6 +126,14 @@
       </div>
     </div>
   </section>
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 
 </html>
