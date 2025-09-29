@@ -315,7 +315,7 @@ body {
 
 .menu-btn {
     display: none;
-    color: #fff;
+    color: #ffffff;
     font-size: 24px;
     cursor: pointer;
 }
@@ -326,7 +326,8 @@ body {
     }
 
     .menu-btn {
-        display: block
+        display: block;
+        color: #fff;
     }
 
     .nav-links {
