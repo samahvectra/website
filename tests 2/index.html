@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohamed Atef | Portfolio</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+  <section class="hero">
+    <header>
+      <nav>
+
+        <a href="#" class="logo">M<span>Atef</span></a>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#content">Content</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="div-text">
+        <h4>Hello My Name Is</h4>
+        <h1>Mohamed Atef</h1>
+        <span>Full-Stack Developer</span>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae velit,
+          consequatur qui voluptatibus praesentium dolorem?
+        </p>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+
+      <div class="div-img">
+        <img src="hero.png" alt="Mohamed Atef smiling" />
+        <div class="social-icon" aria-label="social links">
+          <a href="https://wa.me/+0201114326393" target="_blank"><i class="fa-brands fa-whatsapp"
+              aria-hidden="true"></i><span class="sr-only">Whatsapp</span></a>
+          <a href="https://www.facebook.com/atefdnmohamed2/" target="_blank"><i class="fa-brands fa-facebook"
+              aria-hidden="true"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter/X</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Services" id="services">
+    <h2 class="title">Services</h2>
+    <div class="content" id="content">
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="info">
+          <h3>Deep Researching</h3>
+          <p>I dive beyond surface-level info and uncover detailed, hard-to-find data.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-code"></i></div>
+        <div class="info">
+          <h3>Clean Code</h3>
+          <p>Well-structured, scalable code with great DX and long-term maintainability.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-bolt"></i></div>
+        <div class="info">
+          <h3>Fast Delivery</h3>
+          <p>Iterative development, reliable timelines, and performance-minded builds.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills" id="skills">
+    <h2 class="title">Skills</h2>
+    <div class="skill-content" id="content">
+      <div class="card">
+        <div class="icon"><i class="fa-brands fa-html5"></i></div>
+        <div class="info">
+          <h2>HTML</h2>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fa-brands fa-css3-alt"></i></div>
+        <div class="info">
+          <h2>CSS</h2>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fa-brands fa-js"></i></div>
+        <div class="info">
+          <h2>JS</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2 class="title">Projects</h2>
+    <div class="content">
+      <div class="project-card">
+        <div class="project-img">
+          <img src="1.png" alt="Okaz Market Agency landing page preview" />
+        </div>
+        <div class="project-info">
+          <p class="project-cat">Marketing Agency Portfolio</p>
+          <strong class="project-title">
+            <span>Okaz Market Agency</span>
+            <a href="https://samahvectra.github.io/Okaz/" class="more-details" target="_blank" rel="noopener">More
+              Details</a>
+          </strong>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+
+</html>
